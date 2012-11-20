@@ -29,10 +29,7 @@ exports.list = function (req, res) {
         res.send(errors.ERR_008);
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 1e5651e306f698ed9354c30952fbaacba6475c2c
 
     db.threads.find(mongoQuery,{"id": 1, "subject": 1, "messageCount": 1, "date": 1, "expirationDate": 1, "messages": 1}).toArray( function(err, objects){
         if(err){
